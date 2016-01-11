@@ -25,3 +25,11 @@ $factory->define(CodeDelivery\Models\Category::class, function (Faker\Generator 
         'name' => $faker->word,
     ];
 });
+
+$factory->define(CodeDelivery\Models\Product::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->word,
+        'description' => $faker->sentence,
+        'price' => $faker->numberBetween(0,100000)
+    ];
+});

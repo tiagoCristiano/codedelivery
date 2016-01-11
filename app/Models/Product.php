@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeDeliver\Models;
+namespace CodeDelivery\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +12,11 @@ class Product extends Model
         'description',
         'price'
     ];
+
+    public function category()
+    {
+    	return $this->belongsTo(Product::class);
+    }
 
 
 }
