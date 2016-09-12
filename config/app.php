@@ -146,6 +146,13 @@ return [
         CodeDelivery\Providers\EventServiceProvider::class,
         CodeDelivery\Providers\RouteServiceProvider::class,
 
+        /*
+         * Custom
+        */
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        CodeDelivery\Providers\RepositoryServiceProvider::class,
+        Bestmomo\Scafold\ScafoldServiceProvider::class,
+
     ],
 
     /*
